@@ -12,9 +12,10 @@ const HomePage: React.FC = () => {
           pathname: "/HomePage",
         }}
       >
-        <Text>Home sweet home!</Text>{" "}
+        <Text style={styles.header}>Arabic lessons</Text>{" "}
       </Link>
       <Link
+        style={styles.quizButton}
         href={{
           pathname: "/FlashcardQuiz",
           // /* 1. Navigate to the details route with query params */
@@ -23,7 +24,19 @@ const HomePage: React.FC = () => {
           },
         }}
       >
-        Go to quiz
+        Sample quiz
+      </Link>
+      <Link
+        style={styles.quizButton}
+        href={{
+          pathname: "/FlashcardQuiz",
+          // /* 1. Navigate to the details route with query params */
+          params: {
+            flashcardSetId: "animals",
+          },
+        }}
+      >
+        Animals
       </Link>
     </View>
   );

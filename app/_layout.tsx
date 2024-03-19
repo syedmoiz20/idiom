@@ -9,7 +9,12 @@ const StackLayout = () => {
         headerTintColor: "black",
         headerTitleStyle: { fontWeight: "bold" },
       }}
-    ></Stack>
+    >
+      <Stack.Screen
+        name="index"
+        options={{ headerTitle: "Arabic Lessons", headerShown: true }}
+      />
+    </Stack>
   );
 };
 

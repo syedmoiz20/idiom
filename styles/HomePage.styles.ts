@@ -1,14 +1,20 @@
 const styles = {
+  header: {
+    fontSize: 24,
+    fontWeight: "bold",
+  },
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
-  button: {
-    backgroundColor: "#007AFF", // Example background color
+  quizButton: {
+    backgroundColor: "darkturquoise",
     padding: 10,
     borderRadius: 8,
     alignItems: "center",
+    fontSize: 16,
+    marginTop: 16,
   },
   buttonText: {
     color: "white",
